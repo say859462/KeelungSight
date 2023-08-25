@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>基隆景點瀏覽器</title>
+    <!-- BootStrap5 css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- BootStrap5 js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="api.js"></script>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexkai.css);
+body {
+    font-family: ‘cwTeXKai’,'Space Mono',sans-serif ,serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.footer {
+  padding: 10px 0;
+}
+  .carousel {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .carousel-inner {
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-item {
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-item img {
+    object-fit: cover;
+  }
+
+
+
+
+
+</style>
+<body>
+<!-- header -->
+<header>
+
+    <!--Carousel-->
+    <div id="top-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://bravel.yas.com.hk/wp-content/uploads/2020/02/%E5%9F%BA%E9%9A%86%E6%99%AF%E9%BB%9E_%E6%AD%A3%E6%BF%B1%E6%BC%81%E6%B8%AF-1024x683.jpg"
+                     class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="https://image.cache.storm.mg/styles/smg-800x533-fp/s3/media/image/2019/03/19/20190319-111025_U11420_M506722_7ed6.jpg?itok=lHKkm_UW"
+                     class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="https://mimihan.tw/wp-content/uploads/20201128190658_60.jpg"
+                     class="d-block w-100">
+            </div>
+
+        </div>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#top-carousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#top-carousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#top-carousel" data-bs-slide-to="2"></button>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#top-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#top-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <!--Carousel-->
+    <!--Button Group-->
+    <div class="text-center pt-3 mb-3">
+        <div class="btn-group w-100 " role="group" id="Zone-Button-Group">
+            <button type="button" class="btn btn-primary fw-bold" value="中山區">中山區</button>
+            <button type="button" class="btn btn-primary fw-bold" value="信義區">信義區</button>
+            <button type="button" class="btn btn-primary fw-bold" value="仁愛區">仁愛區</button>
+            <button type="button" class="btn btn-primary fw-bold" value="中正區">中正區</button>
+            <button type="button" class="btn btn-primary fw-bold" value="安樂區">安樂區</button>
+            <button type="button" class="btn btn-primary fw-bold" value="七堵區">七堵區</button>
+            <button type="button" class="btn btn-primary fw-bold" value="暖暖區">暖暖區</button>
+        </div>
+    </div>
+    <!--Button Group-->
+</header>
+<!-- header -->
+
+<!--main-->
+<main>
+
+    <div class="container">
+        <div class="row" id="landscapes">
+
+        </div>
+    </div>
+
+
+</main>
+<!--main-->
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted ">
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2023 Copyright:
+        <span class="text-reset fw-bold">01057124@email.ntou.edu.tw</span>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
+</html>
